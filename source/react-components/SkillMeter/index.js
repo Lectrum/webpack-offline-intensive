@@ -5,7 +5,7 @@ import { hot } from 'react-hot-loader';
 
 // Styles
 import Styles from './styles.css';
-import cat from '../../theme/assets/images/cat.jpg';
+// import cat from '../../theme/assets/images/cat.jpg';
 
 // Components
 import { Button } from '../Button';
@@ -25,7 +25,7 @@ const SkillMeter = hot(module)(
             return (
                 <section className = { Styles.skillMeter }>
                     <h1>My Webpack skill: {skill}</h1>
-                    <img src = { cat } />
+                    {/* <img src = { cat } /> */}
                     <div>
                         <Button
                             text = 'Increment'
