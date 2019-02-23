@@ -5,6 +5,9 @@ import merge from 'webpack-merge';
 // Constants
 import { PROJECT_ROOT, SOURCE } from '../constants';
 
+// Config
+import getCommonConfig from './webpack.common';
+
 export default () => {
     return {
         mode:    'none',
