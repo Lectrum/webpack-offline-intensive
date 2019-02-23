@@ -16,13 +16,8 @@ const SkillMeter = hot(module)(
             skill: 0,
         };
 
-        inc = () => this.setState(({ skill }) => ({
-            skill: skill + 1,
-        }));
-
-        dec = () => this.setState(({ skill }) => ({
-            skill: skill - 1,
-        }));
+        inc = () => this.setState(({ skill }) => ({ skill: skill + 1 }));
+        dec = () => this.setState(({ skill }) => ({ skill: skill - 1 }));
 
         render() {
             const { skill } = this.state;
