@@ -5,7 +5,6 @@ module.exports = api => {
     // api.cache.using(() => env)
 
     // @babel/plugin-dynamic-import
-    // react-hot-loader/babel
 
     return {
         presets: [
@@ -20,6 +19,6 @@ module.exports = api => {
                 },
             ],
         ],
-        plugins: ['@babel/proposal-class-properties'],
+        plugins: ['@babel/proposal-class-properties', 'react-hot-loader/babel'],
     };
 };
