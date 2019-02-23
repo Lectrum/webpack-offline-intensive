@@ -8,17 +8,17 @@
  */
 
 // Core
-const webpack = require('webpack');
-const getConfig = require('./config/webpack.config');
-const chalk = require('chalk');
-const DevServer = require('webpack-dev-server');
-const hot = require('webpack-hot-middleware');
-const openBrowser = require('react-dev-utils/openBrowser');
+import webpack from 'webpack';
+import getConfig from './config/webpack.config';
+import chalk from 'chalk';
+import DevServer from 'webpack-dev-server';
+import hot from 'webpack-hot-middleware';
+import openBrowser from 'react-dev-utils/openBrowser';
 
 const compiler = webpack(getConfig());
 
 // Constants
-const { HOST, PORT } = require('./constants');
+import { HOST, PORT } from './constants';
 
 const server = new DevServer(compiler, {
     host:               HOST,
