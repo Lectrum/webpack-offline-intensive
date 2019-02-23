@@ -1,17 +1,17 @@
 // Core
-const { HotModuleReplacementPlugin } = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+import { HotModuleReplacementPlugin } from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 // Constants
-const { PROJECT_ROOT, SOURCE, BUILD, STATIC } = require('../constants');
+import { PROJECT_ROOT, SOURCE, BUILD, STATIC } from '../constants';
 
 /**
  * object
  * function
  * promise
  */
-module.exports = () => {
+export default () => {
     return {
         mode:    'none',
         devtool: false,
