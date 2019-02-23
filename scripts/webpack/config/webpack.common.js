@@ -30,11 +30,6 @@ export default () => {
                 template: `${STATIC}/template.html`,
                 title:    'Учим вебпак! 💪🏼🌟🔫',
             }),
-            new CleanWebpackPlugin([ 'dist', 'build' ], {
-                root:    PROJECT_ROOT,
-                verbose: true,
-            }),
-            new HotModuleReplacementPlugin(),
         ],
     };
 };
