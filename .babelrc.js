@@ -4,6 +4,8 @@ module.exports = api => {
 
     const plugins = ['@babel/proposal-class-properties'];
 
+    console.log('→ env', env);
+
     if (env === 'development') {
         plugins.push('react-hot-loader/babel');
     }
@@ -18,7 +20,7 @@ module.exports = api => {
             [
                 '@babel/env',
                 {
-                    debug: true,
+                    debug: false,
                     loose: false, // более быстрый код, меньше надёжности
                     spec: true, // менее быстрый код, больше надёжности
                     modules: false, // false || 'auto' = 'esm'
