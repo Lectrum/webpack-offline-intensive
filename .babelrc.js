@@ -9,6 +9,8 @@ module.exports = api => {
                 '@babel/env',
                 {
                     debug: true,
+                    loose: false, // более быстрый код, меньше надёжности
+                    strict: true, // менее быстрый код, больше надёжности
                     modules: false, // false || 'auto' = 'esm'
                 },
             ],
