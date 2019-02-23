@@ -12,6 +12,9 @@ const chalk = require('chalk');
 
 const compiler = webpack(getConfig());
 
+
+console.log('→ getConfig', getConfig);
+
 compiler.run((error, stats) => {
     if (error) {
         // ошибка конфигурации
