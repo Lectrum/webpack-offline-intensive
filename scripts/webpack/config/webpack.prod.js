@@ -19,5 +19,11 @@ export default () => {
                 verbose: true,
             }),
         ],
-    });
+    },
+    // loadProdCss()
+    // loadImages()
+    // loadFonts()
+    // optimizeCss()
+    // optimizeJavaScript()
+    );
 };
