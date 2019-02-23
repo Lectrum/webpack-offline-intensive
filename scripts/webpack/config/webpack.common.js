@@ -4,6 +4,9 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 // Constants
 import { BUILD, STATIC } from '../constants';
 
+// Modules
+import * as modules from '../modules';
+
 /**
  * object
  * function
