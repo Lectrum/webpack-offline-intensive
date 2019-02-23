@@ -10,7 +10,7 @@ import Styles from './styles.css';
 // Components
 import { Button } from '../Button';
 
-const SkillMeter = hot(
+export const SkillMeter = hot(
     class extends Component {
         state = {
             skill: 0,
@@ -41,5 +41,3 @@ const SkillMeter = hot(
         }
     },
 );
-
-render(<SkillMeter />, document.getElementById('app'));
