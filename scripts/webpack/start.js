@@ -17,8 +17,6 @@ import openBrowser from 'react-dev-utils/openBrowser';
 // Config
 import getConfig from './config/webpack.dev';
 
-console.log('→ getConfig', getConfig);
-
 // Constants
 import { HOST, PORT } from './constants';
 
