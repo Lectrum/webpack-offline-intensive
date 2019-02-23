@@ -1,6 +1,5 @@
-console.clear();
 class Human {
-    KIND = 'HUMAN';
+    // KIND = 'HUMAN';
 
     constructor(name, age) {
         this.name = name;
@@ -15,9 +14,9 @@ class Human {
         console.log('Age', this.age);
     }
 
-    sayKind = () => {
-        console.log('Kind', this.KIND);
-    };
+    // sayKind = () => {
+    //     console.log('Kind', this.KIND);
+    // };
 }
 
 const gendalf = new Human('Gendalf', 666);
@@ -28,8 +27,3 @@ gendalf.sayKind();
 export const a = 1;
 export const b = 5;
 const c = a + b;
-console.log(c);
-
-if (module.hot) {
-    module.hot.accept();
-}
