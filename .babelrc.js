@@ -2,7 +2,7 @@ module.exports = api => {
     const env = api.env(); // process.env.BABEL_ENV || process.env.NODE_ENV || 'production'
     api.cache.never();
 
-    // api.cache.using(() => )
+    // api.cache.using(() => env)
 
     // @babel/plugin-dynamic-import
 
