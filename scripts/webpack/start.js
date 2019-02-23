@@ -15,10 +15,10 @@ import DevServer from 'webpack-dev-server';
 import hot from 'webpack-hot-middleware';
 import openBrowser from 'react-dev-utils/openBrowser';
 
-const compiler = webpack(getConfig());
-
 // Constants
 import { HOST, PORT } from './constants';
+
+const compiler = webpack(getConfig());
 
 const server = new DevServer(compiler, {
     host:               HOST,
