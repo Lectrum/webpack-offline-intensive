@@ -11,28 +11,11 @@ export default () => {
         mode:    'none',
         devtool: false,
         entry:   [ SOURCE ],
-        output:  {
-            path:     BUILD,
-            filename: 'bundle.js',
-        },
-        module: {
-            rules: [
-                {
-                    test: /\.css$/,
-                    use:  [ 'style-loader', 'css-loader' ],
-                },
-            ],
-        },
         plugins: [
-            new HtmlWebpackPlugin({
-                template: `${STATIC}/template.html`,
-                title:    'Учим вебпак! 💪🏼🌟🔫',
-            }),
             new CleanWebpackPlugin([ 'dist', 'build' ], {
                 root:    PROJECT_ROOT,
                 verbose: true,
             }),
-            new HotModuleReplacementPlugin(),
         ],
     };
 };
