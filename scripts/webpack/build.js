@@ -9,10 +9,13 @@
 const webpack = require('webpack');
 const getConfig = require('./config/webpack.prod');
 const chalk = require('chalk');
+
 console.log('→ getConfig', getConfig);
 
 const compiler = webpack(getConfig());
 
+// commonJS
+// cjs
 
 
 compiler.run((error, stats) => {
