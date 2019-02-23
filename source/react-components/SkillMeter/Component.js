@@ -12,7 +12,7 @@ import { Button } from '../Button';
 export const SkillMeter = hot(
     class extends Component {
         state = {
-            skill: 0,
+            skill: 12,
         };
 
         inc = () => this.setState(({ skill }) => ({ skill: skill + 1 }));
