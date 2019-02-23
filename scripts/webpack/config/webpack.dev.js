@@ -9,10 +9,10 @@ import { SOURCE } from '../constants';
 import getCommonConfig from './webpack.common';
 
 export default () => {
-    return {
+    return merge(getCommonConfig(), {
         mode:    'none',
         devtool: false,
         entry:   [ SOURCE, 'webpack-hot-middleware/client?reload=true&quiet=true' ],
         plugins: [ new HotModuleReplacementPlugin() ],
-    };
+    });
 };
