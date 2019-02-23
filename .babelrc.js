@@ -5,6 +5,7 @@ module.exports = api => {
     // api.cache.using(() => env)
 
     // @babel/plugin-dynamic-import
+    // react-hot-loader/babel
 
     return {
         presets: [
