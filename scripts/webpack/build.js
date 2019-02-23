@@ -9,11 +9,11 @@
 const webpack = require('webpack');
 const getConfig = require('./config/webpack.prod');
 const chalk = require('chalk');
+console.log('→ getConfig', getConfig);
 
 const compiler = webpack(getConfig());
 
 
-console.log('→ getConfig', getConfig);
 
 compiler.run((error, stats) => {
     if (error) {
