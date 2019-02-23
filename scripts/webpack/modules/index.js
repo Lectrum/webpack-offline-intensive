@@ -1,1 +1,1 @@
-export * from './javascript';
+export { loadJavaScript } from './javascript';
