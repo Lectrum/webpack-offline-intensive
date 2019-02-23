@@ -1,10 +1,8 @@
 // Core
-import { HotModuleReplacementPlugin } from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 // Constants
-import { PROJECT_ROOT, SOURCE, BUILD, STATIC } from '../constants';
+import { PROJECT_ROOT, SOURCE } from '../constants';
 
 export default () => {
     return {
