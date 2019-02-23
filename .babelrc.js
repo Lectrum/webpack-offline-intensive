@@ -2,6 +2,12 @@ module.exports = api => {
     const env = api.env(); // process.env.BABEL_ENV || process.env.NODE_ENV || 'production'
     api.cache.never();
 
+    const plugins = ['@babel/proposal-class-properties'];
+
+    if (env === 'development') {
+        plugins.push('react-hot-loader/babel');
+    }
+
     // api.cache.using(() => env)
 
     // @babel/plugin-dynamic-import
@@ -19,6 +25,6 @@ module.exports = api => {
                 },
             ],
         ],
-        plugins: ['@babel/proposal-class-properties', 'react-hot-loader/babel'],
+        plugins,
     };
 };
