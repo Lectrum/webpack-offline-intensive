@@ -12,7 +12,7 @@ const chalk = require('chalk');
 
 console.log('→ getConfig', getConfig);
 
-const compiler = webpack(getConfig());
+const compiler = webpack(getConfig.default());
 
 // commonJS
 // cjs
