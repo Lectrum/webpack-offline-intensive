@@ -1,7 +1,7 @@
 // Core
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { hot } from 'react-hot-loader';
+import { hot } from 'react-hot-loader/root';
 
 // Styles
 import Styles from './styles.css';
@@ -10,7 +10,7 @@ import Styles from './styles.css';
 // Components
 import { Button } from '../Button';
 
-const SkillMeter = hot(module)(
+const SkillMeter = hot(
     class extends Component {
         state = {
             skill: 0,
