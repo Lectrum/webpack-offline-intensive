@@ -1,5 +1,6 @@
 // Core
 import CleanWebpackPlugin from 'clean-webpack-plugin';
+import merge from 'webpack-merge';
 
 // Constants
 import { PROJECT_ROOT, SOURCE } from '../constants';
