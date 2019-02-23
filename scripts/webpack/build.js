@@ -6,17 +6,11 @@
  */
 
 // Core
-const webpack = require('webpack');
-const getConfig = require('./config/webpack.prod');
-const chalk = require('chalk');
+import webpack from 'webpack';
+import getConfig from './config/webpack.prod';
+import chalk from 'chalk';
 
-console.log('→ getConfig', getConfig);
-
-const compiler = webpack(getConfig.default());
-
-// commonJS
-// cjs
-
+const compiler = webpack(getConfig());
 
 compiler.run((error, stats) => {
     if (error) {
