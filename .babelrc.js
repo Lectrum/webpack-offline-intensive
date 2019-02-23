@@ -9,7 +9,7 @@ module.exports = api => {
                 '@babel/env',
                 {
                     debug: true,
-                    modules: 'cjs', // amd, umd, cjs, esm
+                    modules: false, // false = 'esm'
                 },
             ],
         ],
