@@ -4,8 +4,6 @@ module.exports = api => {
 
     const plugins = ['@babel/proposal-class-properties'];
 
-    console.log('→ env', env);
-
     if (env === 'development') {
         plugins.push('react-hot-loader/babel');
     }
