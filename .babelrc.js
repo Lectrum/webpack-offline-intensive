@@ -4,7 +4,14 @@ module.exports = api => {
     // @babel/plugin-dynamic-import
 
     return {
-        presets: ['@babel/env'],
+        presets: [
+            [
+                '@babel/env',
+                {
+                    debug: true,
+                },
+            ],
+        ],
         plugins: ['@babel/proposal-class-properties'],
     };
 };
