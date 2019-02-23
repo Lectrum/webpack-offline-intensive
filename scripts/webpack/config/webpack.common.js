@@ -1,5 +1,6 @@
 // Core
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import merge from 'webpack-merge';
 
 // Constants
 import { BUILD, STATIC } from '../constants';
