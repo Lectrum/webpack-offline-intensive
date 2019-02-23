@@ -26,6 +26,11 @@ export default () => {
                     title:    'Учим вебпак! 💪🏼🌟🔫',
                 }),
             ],
+            resolve: {
+                alias: {
+                    'react-dom': '@hot-loader/react-dom',
+                },
+            },
         },
         modules.loadJavaScript(),
         modules.loadCss(),
