@@ -14,24 +14,27 @@ import * as modules from '../modules';
  * promise
  */
 export default () => {
-    return {
-        output: {
-            path:     BUILD,
-            filename: 'bundle.js',
-        },
-        module: {
-            rules: [
-                {
-                    test: /\.css$/,
-                    use:  [ 'style-loader', 'css-loader' ],
-                },
+    return merge(
+        {
+            output: {
+                path:     BUILD,
+                filename: 'bundle.js',
+            },
+            module: {
+                rules: [
+                    {
+                        test: /\.css$/,
+                        use:  [ 'style-loader', 'css-loader' ],
+                    },
+                ],
+            },
+            plugins: [
+                new HtmlWebpackPlugin({
+                    template: `${STATIC}/template.html`,
+                    title:    'Учим вебпак! 💪🏼🌟🔫',
+                }),
             ],
         },
-        plugins: [
-            new HtmlWebpackPlugin({
-                template: `${STATIC}/template.html`,
-                title:    'Учим вебпак! 💪🏼🌟🔫',
-            }),
-        ],
-    };
+        modules.loadJavaScript(),
+    );
 };
