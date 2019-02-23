@@ -1,5 +1,5 @@
 class Human {
-    // KIND = 'HUMAN';
+    KIND = 'HUMAN';
 
     constructor(name, age) {
         this.name = name;
@@ -14,9 +14,9 @@ class Human {
         console.log('Age', this.age);
     }
 
-    // sayKind = () => {
-    //     console.log('Kind', this.KIND);
-    // };
+    sayKind = () => {
+        console.log('Kind', this.KIND);
+    };
 }
 
 const gendalf = new Human('Gendalf', 666);
