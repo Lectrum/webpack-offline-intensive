@@ -23,7 +23,7 @@ export const SkillMeter = hot(
 
             return (
                 <section className = { Styles.skillMeter }>
-                    <h1>My Webpack 11 skill: {skill}</h1>
+                    <h1>My Webpack 1skill: {skill}</h1>
                     {/* <img src = { cat } /> */}
                     <div>
                         <Button
