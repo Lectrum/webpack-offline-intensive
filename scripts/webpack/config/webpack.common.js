@@ -13,10 +13,7 @@ import { PROJECT_ROOT, SOURCE, BUILD, STATIC } from '../constants';
  */
 export default () => {
     return {
-        mode:    'none',
-        devtool: false,
-        entry:   [ SOURCE, 'webpack-hot-middleware/client?reload=true&quiet=true' ],
-        output:  {
+        output: {
             path:     BUILD,
             filename: 'bundle.js',
         },
