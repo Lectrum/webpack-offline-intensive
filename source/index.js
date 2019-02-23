@@ -1,16 +1,18 @@
-import component from './simple-components/dom';
-import './theme/main.css';
+// import component from './simple-components/dom';
+// import './theme/main.css';
 
-let demoComponent = component();
+// let demoComponent = component();
 
-document.body.appendChild(demoComponent);
+// document.body.appendChild(demoComponent);
 
-if (module.hot) {
-    module.hot.accept('./simple-components/dom', () => {
-        const nextComponent = component();
+// if (module.hot) {
+//     module.hot.accept('./simple-components/dom', () => {
+//         const nextComponent = component();
 
-        document.body.replaceChild(nextComponent, demoComponent);
+//         document.body.replaceChild(nextComponent, demoComponent);
 
-        demoComponent = nextComponent;
-    });
-}
+//         demoComponent = nextComponent;
+//     });
+// }
+
+import './simple-components/javascript';
