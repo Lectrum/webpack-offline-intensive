@@ -9,7 +9,7 @@ import { PROJECT_ROOT, SOURCE } from '../constants';
 import getCommonConfig from './webpack.common';
 
 export default () => {
-    return {
+    return merge(getCommonConfig(), {
         mode:    'none',
         devtool: false,
         entry:   [ SOURCE ],
@@ -19,5 +19,5 @@ export default () => {
                 verbose: true,
             }),
         ],
-    };
+    });
 };
