@@ -28,5 +28,6 @@ export default () => {
             ],
         },
         modules.loadJavaScript(),
+        modules.loadCss(),
     );
 };
