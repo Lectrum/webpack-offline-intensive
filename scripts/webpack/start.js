@@ -9,11 +9,13 @@
 
 // Core
 import webpack from 'webpack';
-import getConfig from './config/webpack.prod';
 import chalk from 'chalk';
 import DevServer from 'webpack-dev-server';
 import hot from 'webpack-hot-middleware';
 import openBrowser from 'react-dev-utils/openBrowser';
+
+// Config
+import getConfig from './config/webpack.dev';
 
 // Constants
 import { HOST, PORT } from './constants';
