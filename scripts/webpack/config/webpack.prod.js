@@ -26,5 +26,6 @@ export default () => {
             ],
         },
         modules.loadProdCss(),
+        modules.optimizeBuild(),
     );
 };
