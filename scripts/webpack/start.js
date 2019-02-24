@@ -40,7 +40,10 @@ const server = new DevServer(compiler, {
 });
 
 server.listen(PORT, HOST, () => {
-    const url = `http://${HOST}:${PORT}`;
+    const port = server.listeningApp.address().port;
+    console.log('→ port', port);
+
+    const url = `http://${HOST}:${port}`;
     console.log(
         `${chalk.greenBright('→ Server listening on')} ${chalk.blueBright(
             url,
