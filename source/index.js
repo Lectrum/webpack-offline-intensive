@@ -22,6 +22,8 @@
 // import './theme/main.css';
 // import './react-components/SkillMeter';
 
+console.log('→ message');
+
 console.log('→ process.env.NODE_ENV', process.env.NODE_ENV);
 
 // process.env.API_URI
