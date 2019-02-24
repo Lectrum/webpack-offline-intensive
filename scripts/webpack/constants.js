@@ -13,5 +13,4 @@ export const HOST = 'localhost';
 export const PORT = 3000;
 
 // Filenames
-
 export const CHUNK_NAME_ASSET = '[name].[hash:5].[ext]';
