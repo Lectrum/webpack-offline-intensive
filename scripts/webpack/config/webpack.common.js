@@ -16,9 +16,10 @@ export default () => {
     return merge(
         {
             output: {
-                path:       BUILD,
-                filename:   'js/bundle.[chunkhash:5].js',
-                publicPath: '/',
+                path:          BUILD,
+                filename:      'js/bundle.[chunkhash:5].js',
+                chunkFilename: 'js/bundle.[chunkhash:5].js',
+                publicPath:    '/',
             },
         },
         modules.connectHtml(),
