@@ -29,7 +29,7 @@ export const optimizeBuild = () => ({
         occurrenceOrder:    true,
         // production: анализирует module graph и пытается найти модули, которые можно смержить в один единый модуль.
         // ? эта настройка зависит от providedExports и usedExports.
-        concatenateModules: true,
+        concatenateModules: false,
 
         // ✓ определяет экспорированные сущности для каждого модуля.
         // Эта информация помогает остальным продвинутым оптимизациям вебпак.
