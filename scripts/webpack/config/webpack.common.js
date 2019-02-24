@@ -1,9 +1,8 @@
 // Core
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 import merge from 'webpack-merge';
 
 // Constants
-import { BUILD, STATIC } from '../constants';
+import { BUILD } from '../constants';
 
 // Modules
 import * as modules from '../modules';
@@ -23,7 +22,6 @@ export default () => {
         },
         modules.connectHtml(),
         modules.loadJavaScript(),
-        modules.loadCss(),
         modules.loadImages(),
         modules.loadSvg(),
         modules.loadFonts(),
