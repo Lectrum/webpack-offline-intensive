@@ -5,7 +5,7 @@ module.exports = api => {
 
     const plugins = [
         '@babel/proposal-class-properties',
-        '@babel/plugin-dynamic-import',
+        '@babel/plugin-syntax-dynamic-import',
     ];
 
     if (env === 'development') {
