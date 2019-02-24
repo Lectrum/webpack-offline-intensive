@@ -15,7 +15,7 @@ export default () => {
     return merge(
         getCommonConfig(),
         {
-            mode:    'production',
+            mode:    'none',
             devtool: false,
             entry:   [ SOURCE ],
             plugins: [
