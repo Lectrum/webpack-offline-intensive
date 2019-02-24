@@ -21,8 +21,8 @@
 // console.log(a);
 
 // React
-// import './theme/main.css';
-// import './react-components/SkillMeter';
+import './theme/main.css';
+import './react-components/SkillMeter';
 
 // console.log('→ __ENV__', __ENV__);
 // console.log('→ __DEV__', __DEV__);
