@@ -32,7 +32,7 @@
 
         @media (--tabletPortrait), 
                (--tabletLandscape) {
-            color: rebeccapurple;
+            color: orange;
         }
     }
 }
