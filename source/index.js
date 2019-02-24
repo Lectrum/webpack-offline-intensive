@@ -16,7 +16,8 @@
 // }
 
 // JavaScript
-import './simple-components/javascript';
+import { a } from './simple-components/javascript';
+console.log(a);
 
 // React
 // import './theme/main.css';
