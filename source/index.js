@@ -26,7 +26,7 @@ console.log('→ process.env.NODE_ENV', process.env.NODE_ENV);
 
 // process.env.API_URI
 
-const middleware = [];
+// const middleware = [];
 
 // console.log('→ TWO', TWO);
 // console.log('→ TWO_STRINGIFIED', TWO_STRINGIFIED);
