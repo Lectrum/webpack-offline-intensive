@@ -32,9 +32,6 @@ const loadPostCss = (
                 },
             },
         }),
-        fontMagician({
-            protocol: 'https:',
-        }),
     ];
 
     if (minimize) {
