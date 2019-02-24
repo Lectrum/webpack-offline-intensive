@@ -22,25 +22,14 @@
 // import './theme/main.css';
 // import './react-components/SkillMeter';
 
-console.log('→ process.env.NODE_ENV', process.env.NODE_ENV);
+console.log('→ __ENV__', __ENV__);
+console.log('→ __DEV__', __DEV__);
+console.log('→ __STAGE__', __STAGE__);
+console.log('→ __PROD__', __PROD__);
 
-// process.env.API_URI
-
-const middleware = [];
-
-console.log('→ TWO', TWO);
-console.log('→ TWO_STRINGIFIED', TWO_STRINGIFIED);
-console.log('→ TRUE_SIMPLE', TRUE_SIMPLE);
-console.log('→ __FEATURE__', __FEATURE__);
-
-if (process.env.NODE_ENV === 'development') {
-    middleware.push('redux-logger');
+if (__DEV__) {
+    console.log('→ development code');
 }
-
-// if (__DEV__) {
-//     middleware.push('redux-logger');
-// }
-
-if (__FEATURE__) {
-    middleware.push('redux-logger');
+if (__PROD__) {
+    console.log('→ production code');
 }
