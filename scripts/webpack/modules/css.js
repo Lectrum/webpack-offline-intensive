@@ -1,7 +1,7 @@
 // Core
 import env from 'postcss-preset-env';
 import cssnano from 'cssnano';
-import MiniCssExtractPluginfrom from 'mini-css-extract-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const loadPostCss = (
     { sourceMap, minimize } = { sourceMap: false, minimize: false },
