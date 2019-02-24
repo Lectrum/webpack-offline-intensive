@@ -1,9 +1,9 @@
-// import component from './simple-components/dom';
+import component from './simple-components/dom';
 // import './theme/main.css';
 
-// let demoComponent = component();
+let demoComponent = component();
 
-// document.body.appendChild(demoComponent);
+document.body.appendChild(demoComponent);
 
 // if (module.hot) {
 //     module.hot.accept('./simple-components/dom', () => {
@@ -16,8 +16,8 @@
 // }
 
 // JavaScript
-import { a } from './simple-components/javascript';
-console.log(a);
+// import { a } from './simple-components/javascript';
+// console.log(a);
 
 // React
 // import './theme/main.css';
