@@ -16,8 +16,8 @@
 // }
 
 // JavaScript
-import { a } from './simple-components/javascript';
-console.log(a);
+// import { a } from './simple-components/javascript';
+// console.log(a);
 
 // React
 // import './theme/main.css';
@@ -34,3 +34,7 @@ console.log(a);
 // if (__PROD__) {
 //     console.log('→ production code');
 // }
+
+import { trim } from 'lodash-es';
+
+console.log(trim);
