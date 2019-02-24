@@ -21,5 +21,44 @@ export const optimizeBuild = () => ({
         mergeDuplicateChunks:   true,
         // ✓ Удаляет модуль из чанка, если этот модуль присутствует в родительском чанке (то есть уже доступен).
         removeAvailableModules: true,
+
+        // production: находит наиболее часто-используемые модули, и даёт им наименьшие идентификаторы.
+        // Таким образом наиболее часто-используемые модули смогут быть загружены в сборку быстрее.
+        // Эта настройка также помогает вебпаку более эффективно компрессировать финальную сборку.
+        // TODO webpack 5 remove optimization.occurrenceOrder
+        occurrenceOrder:    true,
+        // production: анализирует module graph и пытается найти модули, которые можно смержить в один единый модуль.
+        // ? эта настройка зависит от providedExports и usedExports.
+        concatenateModules: true,
+
+        // ✓ определяет экспорированные сущности для каждого модуля.
+        // Эта информация помогает остальным продвинутым оптимизациям вебпак.
+        providedExports: true,
+        // TODO: точно только в проде? production: определяет использованные экспортированные сущности для каждого модуля.
+        // Эта информация помогает остальным продвинутым оптимизациям вебпак.
+        // Пример: минификаторы и DCE (dead code elimination) могут удалять неиспользованные экспорты из финальной сборки.
+        // ? эта настройка зависит от providedExports
+        usedExports:     true,
+        // production: собирает зависимость более эффективно, если в package.json зависимости стоит этот флаг.
+        // ? эта настройка зависит от providedExports и usedExports
+        sideEffects:     true,
+
+        // development: вместо числовых идентификаторов даёт модулям более понятные имена.
+        // TODO webpack 5 add `moduleIds: "named"` default for development
+        // TODO webpack 5 add `moduleIds: "size"` default for production
+        // TODO webpack 5 remove optimization.namedModules
+        namedModules: false,
+        // Определяет механизм генерирования идентификатора для модуля.
+        // https://webpack.js.org/configuration/optimization/#optimization-moduleids
+        moduleIds:    false,
+
+        // development: вместо числовых идентификаторов даёт чанкам более понятные имена.
+        // TODO webpack 5 add `chunkIds: "named"` default for development
+        // TODO webpack 5 add `chunkIds: "size"` default for production
+        // TODO webpack 5 remove optimization.namedChunks
+        namedChunks: false,
+        // Определяет механизм генерирования идентификатора для чанка.
+        // https://webpack.js.org/configuration/optimization/#optimization-chunkids
+        chunkIds:    false,
     },
 });
