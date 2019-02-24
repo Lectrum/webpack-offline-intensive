@@ -28,6 +28,11 @@ console.log('→ process.env.NODE_ENV', process.env.NODE_ENV);
 
 const middleware = [];
 
+console.log('→ TWO', TWO);
+console.log('→ TWO_STRINGIFIED', TWO_STRINGIFIED);
+console.log('→ TRUE_SIMPLE', TRUE_SIMPLE);
+console.log('→ __FEATURE__', __FEATURE__);
+
 if (process.env.NODE_ENV === 'development') {
     middleware.push('redux-logger');
 }
@@ -36,6 +41,6 @@ if (__DEV__) {
     middleware.push('redux-logger');
 }
 
-if (__FEATURE_NAME__) {
+if (__FEATURE___) {
     middleware.push('redux-logger');
 }
