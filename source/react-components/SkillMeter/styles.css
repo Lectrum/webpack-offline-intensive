@@ -23,6 +23,7 @@
         padding-left: 100px;
         width: max-content;
         color: red;
+        font-size: var(--heading-font-size);
 
         @media (--phonePortrait) {
             color: green;
