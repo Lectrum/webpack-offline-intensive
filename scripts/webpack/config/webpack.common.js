@@ -14,6 +14,8 @@ import * as modules from '../modules';
  * promise
  */
 export default () => {
+    const { NODE_ENV } = process.env;
+
     return merge(
         {
             output: {
@@ -24,10 +26,10 @@ export default () => {
             },
             plugins: [
                 new DefinePlugin({
-                    TWO:             '1+1',
-                    TWO_STRINGIFIED: JSON.stringify('1+1'),
-                    TRUE_SIMPLE:     true,
-                    __FEATURE__:     JSON.stringify(true),
+                    __ENV__:   JSON.stringify(NODE_ENV),
+                    __DEV__:   JSON.stringify(NODE_ENV === 'development'),
+                    __STAGE__: JSON.stringify(NODE_ENV === 'stage'),
+                    __PROD__:  JSON.stringify(NODE_ENV === 'production'),
                 }),
             ],
         },
