@@ -24,6 +24,7 @@ export default () => {
                 plugins:       [
                     new DefinePlugin({
                         TWO:              '1+1',
+                        TWO_STRINGIFIED:  '1+1',
                         TRUE_SIMPLE:      true,
                         TRUE_STRINGIFIED: JSON.stringify(true),
                         __FEATURE__:      JSON.stringify(true),
