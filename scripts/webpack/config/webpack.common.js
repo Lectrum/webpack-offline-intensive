@@ -1,4 +1,5 @@
 // Core
+import { DefinePlugin } from 'webpack';
 import merge from 'webpack-merge';
 
 // Constants
@@ -20,6 +21,14 @@ export default () => {
                 filename:      'js/bundle.[chunkhash:5].js',
                 chunkFilename: 'js/bundle.[chunkhash:5].js',
                 publicPath:    '/',
+                plugins:       [
+                    new DefinePlugin({
+                        TWO:              '1+1',
+                        TRUE_SIMPLE:      true,
+                        TRUE_STRINGIFIED: JSON.stringify(true),
+                        __FEATURE__:      JSON.stringify(true),
+                    }),
+                ],
             },
         },
         modules.connectHtml(),
