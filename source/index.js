@@ -20,7 +20,7 @@
 
 // React
 // import './theme/main.css';
-// import './react-components/SkillMeter';
+import './react-components/SkillMeter';
 
 console.log('→ message');
 
