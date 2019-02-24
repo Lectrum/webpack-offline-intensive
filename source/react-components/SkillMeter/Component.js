@@ -30,7 +30,7 @@ class SkillMeter extends Component {
                 <h1>My Webpack skill: {skill}</h1>
                 <img src = { cat } />
                 <img src = { reactLogo } />
-                <ReactLogo />
+                <ReactLogo width = { 50 } />
                 <div>
                     <Button
                         text = 'Increment'
