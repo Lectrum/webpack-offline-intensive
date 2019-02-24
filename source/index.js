@@ -39,6 +39,3 @@ if (__DEV__) {
 if (__FEATURE_NAME__) {
     middleware.push('redux-logger');
 }
-
-// if (true) {}
-// if (false) {} // dead code
