@@ -1,7 +1,7 @@
 // Core
 import React, { Component } from 'react';
-
 import { hot } from 'react-hot-loader/root';
+
 // Styles
 import Styles from './styles.css';
 import cat from '../../theme/assets/images/cat.jpg';
