@@ -50,7 +50,7 @@ export const optimizeBuild = () => ({
         namedModules: true,
         // Определяет механизм генерирования идентификатора для модуля.
         // https://webpack.js.org/configuration/optimization/#optimization-moduleids
-        moduleIds:    false,
+        moduleIds:    'named',
 
         // development: вместо числовых идентификаторов даёт чанкам более понятные имена.
         // TODO webpack 5 add `chunkIds: "named"` default for development
