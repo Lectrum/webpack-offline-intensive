@@ -18,7 +18,7 @@ export default () => {
         {
             output: {
                 path:          BUILD,
-                filename:      'js/bundle.[name].js',
+                filename:      'js/bundle.[chunkhash].js',
                 chunkFilename: 'js/bundle.[chunkhash:5].js',
                 publicPath:    '/',
             },
