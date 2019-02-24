@@ -9,7 +9,7 @@ import TerserPlugin from 'terser-webpack-plugin';
 export const optimizeBuild = () => ({
     optimization: {
         // production: минификация JavaScript.
-        minimize:  false,
+        minimize:  true,
         minimizer: [ new TerserPlugin() ],
 
         // production: останавливает эмит сборки при возникновении ошибки во время компиляции.
