@@ -21,7 +21,7 @@
 // console.log(a);
 
 // React
-import './theme/main.css';
+// import './theme/main.css';
 import './react-components/Carousel';
 
 // console.log('→ __ENV__', __ENV__);
