@@ -22,6 +22,9 @@ export const loadCss = () => ({
                         options: {
                             sourceMap: true,
                             plugins:   [
+                                // первый плагин
+                                // второй плагин
+                                // ... плагин
                                 env({
                                     stage:    0,
                                     features: {
