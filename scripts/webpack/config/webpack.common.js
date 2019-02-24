@@ -23,11 +23,10 @@ export default () => {
                 publicPath:    '/',
                 plugins:       [
                     new DefinePlugin({
-                        TWO:              '1+1',
-                        TWO_STRINGIFIED:  JSON.stringify('1+1'),
-                        TRUE_SIMPLE:      true,
-                        TRUE_STRINGIFIED: JSON.stringify(true),
-                        __FEATURE__:      JSON.stringify(true),
+                        TWO:             '1+1',
+                        TWO_STRINGIFIED: JSON.stringify('1+1'),
+                        TRUE_SIMPLE:     true,
+                        __FEATURE__:     JSON.stringify(true),
                     }),
                 ],
             },
