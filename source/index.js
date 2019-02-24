@@ -35,6 +35,6 @@
 //     console.log('→ production code');
 // }
 
-import { trim } from 'lodash-es';
+import * as l from 'lodash-es';
 
-console.log(trim);
+console.log(l.trim);
