@@ -1,4 +1,6 @@
 .skillMeter {
+    --heading-font-size: 24px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
