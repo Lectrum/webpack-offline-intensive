@@ -22,7 +22,7 @@
 
 // React
 import './theme/main.css';
-import './react-components/SkillMeter';
+import './react-components/Carousel';
 
 // console.log('→ __ENV__', __ENV__);
 // console.log('→ __DEV__', __DEV__);
