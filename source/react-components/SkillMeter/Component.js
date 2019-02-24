@@ -4,8 +4,7 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader/root';
 // Styles
 import Styles from './styles.css';
-// import './styles.css';
-// import cat from '../../theme/assets/images/cat.jpg';
+import cat from '../../theme/assets/images/cat.jpg';
 
 // Components
 import { Button } from '../Button';
@@ -28,7 +27,7 @@ class SkillMeter extends Component {
                     '--heading-font-size': `${skill}px`,
                 }}>
                 <h1>My Webpack skill: {skill}</h1>
-                {/* <img src = { cat } /> */}
+                <img src = { cat } />
                 <div>
                     <Button
                         text = 'Increment'
