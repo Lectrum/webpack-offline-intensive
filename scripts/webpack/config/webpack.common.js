@@ -16,8 +16,9 @@ export default () => {
     return merge(
         {
             output: {
-                path:     BUILD,
-                filename: 'js/bundle.js',
+                path:       BUILD,
+                filename:   'js/bundle.js',
+                publicPath: '/',
             },
         },
         modules.connectHtml(),
