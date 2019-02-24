@@ -19,4 +19,5 @@
 // import './simple-components/javascript';
 
 // React
+import './theme/main.css';
 import './react-components/SkillMeter';
