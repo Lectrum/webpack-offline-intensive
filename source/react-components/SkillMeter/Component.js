@@ -7,10 +7,6 @@ import Styles from './styles.css';
 import cat from '../../theme/assets/images/cat.jpg';
 import reactLogo, { ReactComponent as ReactLogo } from '../../theme/assets/images/react.svg';
 
-console.log('→ cat', cat);
-console.log('→ reactLogo', reactLogo);
-console.log('→ ReactLogo', ReactLogo);
-
 // Components
 import { Button } from '../Button';
 
@@ -33,6 +29,8 @@ class SkillMeter extends Component {
                 }}>
                 <h1>My Webpack skill: {skill}</h1>
                 <img src = { cat } />
+                <img src = { reactLogo } />
+                <ReactLogo />
                 <div>
                     <Button
                         text = 'Increment'
