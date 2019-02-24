@@ -29,5 +29,10 @@
         @media (--phoneLandscape) {
             color: rebeccapurple;
         }
+
+        @media (--tabletPortrait), 
+               (--tabletLandscape) {
+            color: rebeccapurple;
+        }
     }
 }
