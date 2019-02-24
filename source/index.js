@@ -24,6 +24,8 @@
 
 console.log('→ process.env.NODE_ENV', process.env.NODE_ENV);
 
+// process.env.API_URI
+
 const middleware = [];
 
 if (process.env.NODE_ENV === 'development') {
