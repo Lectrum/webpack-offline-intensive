@@ -1,10 +1,10 @@
-import component from './simple-components/dom';
-import './theme/main.css';
+// import component from './simple-components/dom';
+// import './theme/main.css';
 
-let demoComponent = component();
+// let demoComponent = component();
 
-document.body.appendChild(demoComponent);
-console.log('→ message');
+// document.body.appendChild(demoComponent);
+// console.log('→ message');
 
 // if (module.hot) {
 //     module.hot.accept('./simple-components/dom', () => {
