@@ -10,7 +10,7 @@ export default (text = '111234 🎉🎉🎉') => {
         element.textContent = 'fetching...';
 
         const result = await import(/* webpackChunkName: "lazyLoadedText" */
-            './lazyLoadedText'
+            './lazyLoadedText',
         );
 
         element.textContent = result.default;
