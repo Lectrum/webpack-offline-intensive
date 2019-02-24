@@ -20,14 +20,12 @@ export default () => {
                 path:     BUILD,
                 filename: 'bundle.js',
             },
-            plugins: [
-                new HtmlWebpackPlugin({
-                    template: `${STATIC}/template.html`,
-                    title:    'Учим вебпак! 💪🏼🌟🔫',
-                }),
-            ],
         },
+        modules.connectHtml(),
         modules.loadJavaScript(),
         modules.loadCss(),
+        modules.loadImages(),
+        modules.loadSvg(),
+        modules.loadFonts(),
     );
 };
