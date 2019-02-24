@@ -16,20 +16,20 @@
 // }
 
 // JavaScript
-// import './simple-components/javascript';
+import './simple-components/javascript';
 
 // React
 // import './theme/main.css';
 // import './react-components/SkillMeter';
 
-console.log('→ __ENV__', __ENV__);
-console.log('→ __DEV__', __DEV__);
-console.log('→ __STAGE__', __STAGE__);
-console.log('→ __PROD__', __PROD__);
+// console.log('→ __ENV__', __ENV__);
+// console.log('→ __DEV__', __DEV__);
+// console.log('→ __STAGE__', __STAGE__);
+// console.log('→ __PROD__', __PROD__);
 
-if (__DEV__) {
-    console.log('→ development code');
-}
-if (__PROD__) {
-    console.log('→ production code');
-}
+// if (__DEV__) {
+//     console.log('→ development code');
+// }
+// if (__PROD__) {
+//     console.log('→ production code');
+// }
