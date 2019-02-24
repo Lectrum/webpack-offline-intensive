@@ -22,7 +22,11 @@ class SkillMeter extends Component {
         const { skill } = this.state;
 
         return (
-            <section className = { Styles.skillMeter }>
+            <section
+                className = { Styles.skillMeter }
+                style = {{
+                    '--heading-font-size': `${skill}px`,
+                }}>
                 <h1>My Webpack skill: {skill}</h1>
                 {/* <img src = { cat } /> */}
                 <div>
