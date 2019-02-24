@@ -12,7 +12,7 @@ import { Button } from '../Button';
 
 class SkillMeter extends Component {
     state = {
-        skill: 2,
+        skill: 35,
     };
 
     inc = () => this.setState(({ skill }) => ({ skill: skill + 1 }));
