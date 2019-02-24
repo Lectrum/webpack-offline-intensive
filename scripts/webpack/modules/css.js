@@ -10,7 +10,7 @@ export const loadCss = () => ({
                         options: {
                             modules:        true,
                             localIdentName:
-                                '[path][name]__[local]--[hash:base64:5]',
+                                '[path][name]__[local]-[hash:base64:5]',
                             sourceMap: true,
                         },
                     },
