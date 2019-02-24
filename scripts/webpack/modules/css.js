@@ -36,9 +36,9 @@ const loadPostCss = (
         }),
     ];
 
-    if (minimize) {
-        plugins.push(cssnano({ preset: [ 'default', { normalizeUrl: false }] }));
-    }
+    // if (minimize) {
+    //     plugins.push(cssnano({ preset: [ 'default', { normalizeUrl: false }] }));
+    // }
 
     return {
         loader:  'postcss-loader',
