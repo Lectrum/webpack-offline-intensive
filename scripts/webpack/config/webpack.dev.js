@@ -11,7 +11,7 @@ import getCommonConfig from './webpack.common';
 export default () => {
     return merge(getCommonConfig(), {
         mode:    'development',
-        devtool: false,
+        devtool: 'cheap-module-eval-source-map',
         entry:   [ SOURCE, 'webpack-hot-middleware/client?reload=true&quiet=true' ],
         plugins: [ new HotModuleReplacementPlugin() ],
     });
