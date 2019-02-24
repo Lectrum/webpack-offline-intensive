@@ -20,7 +20,8 @@ export const loadCss = () => ({
                     {
                         loader:  'postcss-loader',
                         options: {
-                            plugins: [
+                            sourceMap: true,
+                            plugins:   [
                                 env({
                                     stage:    0,
                                     features: {
