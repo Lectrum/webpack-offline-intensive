@@ -19,5 +19,7 @@
 // import './simple-components/javascript';
 
 // React
-import './theme/main.css';
-import './react-components/SkillMeter';
+// import './theme/main.css';
+// import './react-components/SkillMeter';
+
+console.log('→ process.env.NODE_ENV', process.env.NODE_ENV);
