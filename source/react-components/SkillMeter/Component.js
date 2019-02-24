@@ -22,7 +22,7 @@ class SkillMeter extends Component {
 
         return (
             <section className = { Styles.skillMeter }>
-                <h1>My Webpack skill: {skill}</h1>
+                <h1>My WebpACK Skill: {skill}</h1>
                 {/* <img src = { cat } /> */}
                 <div>
                     <Button
