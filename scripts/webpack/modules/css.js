@@ -26,7 +26,7 @@ export const loadCss = () => ({
                                 // второй плагин
                                 // ... плагин
                                 env({
-                                    stage:    0,
+                                    stage:    0, // default: 2
                                     features: {
                                         'custom-media-queries': {
                                             importFrom: [
