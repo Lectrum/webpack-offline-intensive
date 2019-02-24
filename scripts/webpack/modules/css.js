@@ -1,5 +1,6 @@
 // Core
 import env from 'postcss-preset-env';
+import cssnano from 'cssnano';
 
 const loadPostCss = (
     { sourceMap, minimize } = { sourceMap: false, minimize: false },
