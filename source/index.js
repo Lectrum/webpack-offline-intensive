@@ -23,3 +23,9 @@
 // import './react-components/SkillMeter';
 
 console.log('→ process.env.NODE_ENV', process.env.NODE_ENV);
+
+const middleware = [];
+
+if (process.env.NODE_ENV === 'development') {
+    middleware.push('redux-logger');
+}
