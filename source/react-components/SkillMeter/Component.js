@@ -21,6 +21,8 @@ class SkillMeter extends Component {
     render() {
         const { skill } = this.state;
 
+        throw new Error('boom')
+
         return (
             <section
                 className = { Styles.skillMeter }
