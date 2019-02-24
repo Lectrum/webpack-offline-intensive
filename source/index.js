@@ -4,6 +4,7 @@ import './theme/main.css';
 let demoComponent = component();
 
 document.body.appendChild(demoComponent);
+console.log('→ message');
 
 // if (module.hot) {
 //     module.hot.accept('./simple-components/dom', () => {
